@@ -33,6 +33,292 @@
                 <action id="0" name="Set text" sid="472704616265409" type="enemyHP">
                     <param id="0" name="Text">FAKEplayer.healthhing</param>
                 </action>
+                <action id="11" name="Sync object" sid="224880722030962" type="Multiplayer">
+                    <param id="0" name="Object">player</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="429538378453589" type="Multiplayer">
+                    <param id="0" name="Object">player2</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="339663617336816" type="Multiplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="327876496689679" type="Multiplayer">
+                    <param id="0" name="Object">blood2</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="368742685737669" type="Multiplayer">
+                    <param id="0" name="Object">blood3</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="657079069380167" type="Multiplayer">
+                    <param id="0" name="Object">haldaniel</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="959727998176128" type="Multiplayer">
+                    <param id="0" name="Object">haldanieldead</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="571434893669115" type="Multiplayer">
+                    <param id="0" name="Object">fest</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="885991769038876" type="Multiplayer">
+                    <param id="0" name="Object">playerprojectile</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="999667064159703" type="Multiplayer">
+                    <param id="0" name="Object">playercutscene</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="668242682374406" type="Multiplayer">
+                    <param id="0" name="Object">stonehand</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="462445041204999" type="Multiplayer">
+                    <param id="0" name="Object">taunteffect</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="981786707388662" type="Multiplayer">
+                    <param id="0" name="Object">FAKEplayer</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="889471551282541" type="Multiplayer">
+                    <param id="0" name="Object">faceamoyer</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="177207104101163" type="Multiplayer">
+                    <param id="0" name="Object">text</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="132190150110791" type="Multiplayer">
+                    <param id="0" name="Object">server</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="775976931996373" type="Multiplayer">
+                    <param id="0" name="Object">cursor</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="307890405838875" type="Multiplayer">
+                    <param id="0" name="Object">powerorbs</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="537714857479554" type="Multiplayer">
+                    <param id="0" name="Object">deadplayer</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="479051493286481" type="Multiplayer">
+                    <param id="0" name="Object">name</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="668404754584615" type="Multiplayer">
+                    <param id="0" name="Object">playeronline</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="662833733841067" type="Multiplayer">
+                    <param id="0" name="Object">enemyHP</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="548935203513513" type="Multiplayer">
+                    <param id="0" name="Object">FAKEplayer</param>
+                    <param id="1" name="Instance variable">FAKEplayer|healthhing</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;HP_Enemy&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="494799040522128" type="Multiplayer">
+                    <param id="0" name="Object">player</param>
+                    <param id="1" name="Instance variable">player|blood</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;HP_Player&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="151972843531306" type="Multiplayer">
+                    <param id="0" name="Object">player2</param>
+                    <param id="1" name="Instance variable">player2|blood</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;HP_Player2&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="272953889974095" type="Multiplayer">
+                    <param id="0" name="Object">player</param>
+                    <param id="1" name="Instance variable">player|name</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;Player_Name&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="489408036643968" type="Multiplayer">
+                    <param id="0" name="Object">player</param>
+                    <param id="1" name="Instance variable">player|oldX</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;Player_OLDX&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="782201809394823" type="Multiplayer">
+                    <param id="0" name="Object">player</param>
+                    <param id="1" name="Instance variable">player|oldy</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;Player_OLDY&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="128805805386545" type="Multiplayer">
+                    <param id="0" name="Object">playercutscene</param>
+                    <param id="1" name="Instance variable">playercutscene|oldX</param>
+                    <param id="2" name="Precision">1</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;Player_Cutscene_OLDX&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="968011380103876" type="Multiplayer">
+                    <param id="0" name="Object">playercutscene</param>
+                    <param id="1" name="Instance variable">playercutscene|oldy</param>
+                    <param id="2" name="Precision">1</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;Player_Cutscene_OLDY&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="564980058152757" type="Multiplayer">
+                    <param id="0" name="Object">playercutscene</param>
+                    <param id="1" name="Instance variable">playercutscene|name</param>
+                    <param id="2" name="Precision">1</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;Player_Cutscene_Name&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="129932429505320" type="Multiplayer">
+                    <param id="0" name="Object">playercutscene</param>
+                    <param id="1" name="Instance variable">playercutscene|blood</param>
+                    <param id="2" name="Precision">1</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;Player_Cutscene_HP&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="479732166829122" type="Multiplayer">
+                    <param id="0" name="Object">playeronline</param>
+                    <param id="1" name="Instance variable">playeronline|oldX</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;ONLINE_Oldx&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="600070846990422" type="Multiplayer">
+                    <param id="0" name="Object">playeronline</param>
+                    <param id="1" name="Instance variable">playeronline|oldy</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;ONLINE_Oldy&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="403846945054011" type="Multiplayer">
+                    <param id="0" name="Object">playeronline</param>
+                    <param id="1" name="Instance variable">playeronline|blood</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;ONLINE_HP&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="130289916125501" type="Multiplayer">
+                    <param id="0" name="Object">playeronline</param>
+                    <param id="1" name="Instance variable">playeronline|name</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;ONLINE_Name&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="562595377785310" type="Multiplayer">
+                    <param id="0" name="Object">haldaniel</param>
+                    <param id="1" name="Instance variable">haldaniel|oldx</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;funny_oldx&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="390729545559512" type="Multiplayer">
+                    <param id="0" name="Object">haldaniel</param>
+                    <param id="1" name="Instance variable">haldaniel|oldy</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;funny_oldy&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="700960573602392" type="Multiplayer">
+                    <param id="0" name="Object">playerprojectile</param>
+                    <param id="1" name="Instance variable">playerprojectile|oldX</param>
+                    <param id="2" name="Precision">2</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;projectile_OldX&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="746579175380955" type="Multiplayer">
+                    <param id="0" name="Object">playerprojectile</param>
+                    <param id="1" name="Instance variable">playerprojectile|oldy</param>
+                    <param id="2" name="Precision">2</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;projectile_OldY&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="826308095312343" type="Multiplayer">
+                    <param id="0" name="Object">playerprojectile</param>
+                    <param id="1" name="Instance variable">playerprojectile|blood</param>
+                    <param id="2" name="Precision">2</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;projectile_HP&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="715876186079871" type="Multiplayer">
+                    <param id="0" name="Object">playerprojectile</param>
+                    <param id="1" name="Instance variable">playerprojectile|name</param>
+                    <param id="2" name="Precision">2</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;projectile_UNUSED&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="273855979513948" type="Multiplayer">
+                    <param id="0" name="Object">haldanieldead</param>
+                    <param id="1" name="Instance variable">haldanieldead|oldx</param>
+                    <param id="2" name="Precision">2</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;Funny_dead_oldX&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="152979699343622" type="Multiplayer">
+                    <param id="0" name="Object">haldanieldead</param>
+                    <param id="1" name="Instance variable">haldanieldead|oldy</param>
+                    <param id="2" name="Precision">2</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;Funny_dead_oldY&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="188181622013742">

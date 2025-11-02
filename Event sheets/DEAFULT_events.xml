@@ -482,6 +482,292 @@
                     <param id="0" name="X">FAKEplayer.X -30</param>
                     <param id="1" name="Y">FAKEplayer.Y -35</param>
                 </action>
+                <action id="11" name="Sync object" sid="735549334932336" type="Multiplayer">
+                    <param id="0" name="Object">player</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="778436465024394" type="Multiplayer">
+                    <param id="0" name="Object">player2</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="835576162053068" type="Multiplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="636785308258620" type="Multiplayer">
+                    <param id="0" name="Object">blood2</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="844513567211169" type="Multiplayer">
+                    <param id="0" name="Object">blood3</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="943494937452232" type="Multiplayer">
+                    <param id="0" name="Object">haldaniel</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="841038766805920" type="Multiplayer">
+                    <param id="0" name="Object">haldanieldead</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="325975128240467" type="Multiplayer">
+                    <param id="0" name="Object">fest</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="993378668981411" type="Multiplayer">
+                    <param id="0" name="Object">playerprojectile</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="435083797415117" type="Multiplayer">
+                    <param id="0" name="Object">playercutscene</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="974243588217303" type="Multiplayer">
+                    <param id="0" name="Object">stonehand</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="345458799143627" type="Multiplayer">
+                    <param id="0" name="Object">taunteffect</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="330010902039168" type="Multiplayer">
+                    <param id="0" name="Object">FAKEplayer</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="454079174343023" type="Multiplayer">
+                    <param id="0" name="Object">faceamoyer</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="259023898309251" type="Multiplayer">
+                    <param id="0" name="Object">text</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="869691085183020" type="Multiplayer">
+                    <param id="0" name="Object">server</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="749085447334661" type="Multiplayer">
+                    <param id="0" name="Object">cursor</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="737471183017906" type="Multiplayer">
+                    <param id="0" name="Object">powerorbs</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="900481519646150" type="Multiplayer">
+                    <param id="0" name="Object">deadplayer</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="650074640784084" type="Multiplayer">
+                    <param id="0" name="Object">name</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="767365162066630" type="Multiplayer">
+                    <param id="0" name="Object">playeronline</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="11" name="Sync object" sid="421370972372944" type="Multiplayer">
+                    <param id="0" name="Object">enemyHP</param>
+                    <param id="1" name="Data">3</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Bandwidth">0</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="713560760217113" type="Multiplayer">
+                    <param id="0" name="Object">FAKEplayer</param>
+                    <param id="1" name="Instance variable">FAKEplayer|healthhing</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;HP_Enemy&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="736564254123079" type="Multiplayer">
+                    <param id="0" name="Object">player</param>
+                    <param id="1" name="Instance variable">player|blood</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;HP_Player&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="214346567677003" type="Multiplayer">
+                    <param id="0" name="Object">player2</param>
+                    <param id="1" name="Instance variable">player2|blood</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;HP_Player2&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="434453364313819" type="Multiplayer">
+                    <param id="0" name="Object">player</param>
+                    <param id="1" name="Instance variable">player|name</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;Player_Name&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="687696827145004" type="Multiplayer">
+                    <param id="0" name="Object">player</param>
+                    <param id="1" name="Instance variable">player|oldX</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;Player_OLDX&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="382381205664638" type="Multiplayer">
+                    <param id="0" name="Object">player</param>
+                    <param id="1" name="Instance variable">player|oldy</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;Player_OLDY&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="817835960120339" type="Multiplayer">
+                    <param id="0" name="Object">playercutscene</param>
+                    <param id="1" name="Instance variable">playercutscene|oldX</param>
+                    <param id="2" name="Precision">1</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;Player_Cutscene_OLDX&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="745084420550535" type="Multiplayer">
+                    <param id="0" name="Object">playercutscene</param>
+                    <param id="1" name="Instance variable">playercutscene|oldy</param>
+                    <param id="2" name="Precision">1</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;Player_Cutscene_OLDY&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="959289056383273" type="Multiplayer">
+                    <param id="0" name="Object">playercutscene</param>
+                    <param id="1" name="Instance variable">playercutscene|name</param>
+                    <param id="2" name="Precision">1</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;Player_Cutscene_Name&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="383188505817320" type="Multiplayer">
+                    <param id="0" name="Object">playercutscene</param>
+                    <param id="1" name="Instance variable">playercutscene|blood</param>
+                    <param id="2" name="Precision">1</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;Player_Cutscene_HP&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="299331413002277" type="Multiplayer">
+                    <param id="0" name="Object">playeronline</param>
+                    <param id="1" name="Instance variable">playeronline|oldX</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;ONLINE_Oldx&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="205832744824679" type="Multiplayer">
+                    <param id="0" name="Object">playeronline</param>
+                    <param id="1" name="Instance variable">playeronline|oldy</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;ONLINE_Oldy&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="985144457191925" type="Multiplayer">
+                    <param id="0" name="Object">playeronline</param>
+                    <param id="1" name="Instance variable">playeronline|blood</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;ONLINE_HP&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="307163021750163" type="Multiplayer">
+                    <param id="0" name="Object">playeronline</param>
+                    <param id="1" name="Instance variable">playeronline|name</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;ONLINE_Name&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="275596704389483" type="Multiplayer">
+                    <param id="0" name="Object">haldaniel</param>
+                    <param id="1" name="Instance variable">haldaniel|oldx</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;funny_oldx&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="587901341356956" type="Multiplayer">
+                    <param id="0" name="Object">haldaniel</param>
+                    <param id="1" name="Instance variable">haldaniel|oldy</param>
+                    <param id="2" name="Precision">0</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;funny_oldy&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="396521457918165" type="Multiplayer">
+                    <param id="0" name="Object">playerprojectile</param>
+                    <param id="1" name="Instance variable">playerprojectile|oldX</param>
+                    <param id="2" name="Precision">2</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;projectile_OldX&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="719274271984655" type="Multiplayer">
+                    <param id="0" name="Object">playerprojectile</param>
+                    <param id="1" name="Instance variable">playerprojectile|oldy</param>
+                    <param id="2" name="Precision">2</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;projectile_OldY&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="744103219699608" type="Multiplayer">
+                    <param id="0" name="Object">playerprojectile</param>
+                    <param id="1" name="Instance variable">playerprojectile|blood</param>
+                    <param id="2" name="Precision">2</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;projectile_HP&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="394654207900418" type="Multiplayer">
+                    <param id="0" name="Object">playerprojectile</param>
+                    <param id="1" name="Instance variable">playerprojectile|name</param>
+                    <param id="2" name="Precision">2</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;projectile_UNUSED&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="285274716771193" type="Multiplayer">
+                    <param id="0" name="Object">haldanieldead</param>
+                    <param id="1" name="Instance variable">haldanieldead|oldx</param>
+                    <param id="2" name="Precision">2</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;Funny_dead_oldX&quot;</param>
+                </action>
+                <action id="12" name="Sync instance variable" sid="677822549771428" type="Multiplayer">
+                    <param id="0" name="Object">haldanieldead</param>
+                    <param id="1" name="Instance variable">haldanieldead|oldy</param>
+                    <param id="2" name="Precision">2</param>
+                    <param id="3" name="Interpolation">0</param>
+                    <param id="4" name="Client value tag">&quot;Funny_dead_oldY&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="142538723512247">
@@ -4219,37 +4505,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="779085727140634">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="838744753300578" type="papperman">
-                    <param id="0" name="Object">player</param>
-                </condition>
-                <condition id="2" name="Is playing" sid="256375004757261" type="player">
-                    <param id="0" name="Animation">&quot;run&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="330365611046959" type="papperman">
-                    <param id="0" name="Object">moodaf</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="997020537913042">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="777365110905424" type="stonehand">
-                    <param id="0" name="Object">papperman</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="558088632093218" type="papperman">
-                    <param id="0" name="Object">moodaf</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="836669790423063">
             <conditions>
                 <condition id="-1" name="Every tick" sid="574235707100718" type="System" />
@@ -4259,9 +4514,15 @@
                     <param id="0" name="X">self.X +10</param>
                     <param id="1" name="Y">self.Y +10</param>
                 </action>
-                <action id="-3" name="Set position" sid="803166395390699" type="moodaf">
+                <action behavior="LineOfSight" id="0" name="Set range" sid="756939925909038" type="placeholder">
+                    <param id="0" name="Range">10000000000000000000000000000000000000000000000000</param>
+                </action>
+                <action id="-3" name="Set position" sid="364230373212189" type="moodaf">
                     <param id="0" name="X">self.X +10</param>
                     <param id="1" name="Y">self.Y +10</param>
+                </action>
+                <action id="-2" name="Set Y" sid="237311292299291" type="placeholder">
+                    <param id="0" name="Y">player.Y</param>
                 </action>
             </actions>
         </event-block>
@@ -4458,249 +4719,6 @@
                     <param id="2" name="Image point">1</param>
                 </action>
                 <action id="-9" name="Destroy" sid="181736240267468" type="haldaniel" />
-            </actions>
-        </event-block>
-        <event-block sid="203076273046911">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="622928025184201" type="player">
-                    <param id="0" name="Object">haldaniel</param>
-                </condition>
-                <condition id="2" name="Is playing" sid="977271509503574" type="player">
-                    <param id="0" name="Animation">&quot;attack&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="425936169497102" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="127766966320437" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="922380342979702" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="146384910784978" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="174370104859211" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="882973111026373" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="157602818224688" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="348440714256561" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="702578672103789" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="353381283356531" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="426327825835899" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="922499809592326" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="373924600267309" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="591405837220353" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="372072791241374" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="419794785198085" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="977125329713389" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="537771219432933" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="898381192686881" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="213300485790263" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="870041668492642" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="802914360360339" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="362430955842631" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="342810939579608" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="789893913407612" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="879392252948898" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="412419760719593" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="218155407739665" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="536194504588499" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="616658625993519" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="874750364903764" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="158923949958936" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="626448507185221" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="874018538510654" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="777333691270056" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="386515206847864" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="228277417227480" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="634664626284697" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="266005719425760" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="508504843868763" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="403926727718036" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="474228080496430" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="304522211260452" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="241036823337164" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="829506569874326" type="haldaniel">
-                    <param id="0" name="Object">blood3</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="694512282293948" type="haldaniel">
-                    <param id="0" name="Object">haldanieldead</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="-9" name="Destroy" sid="532104345746099" type="haldaniel" />
             </actions>
         </event-block>
         <event-block sid="508967873582716">

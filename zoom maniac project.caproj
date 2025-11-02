@@ -27,6 +27,7 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Car" version="1">Car</behavior>
         <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
         <behavior author="Scirra" id="NoSave" version="1">No Save</behavior>
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
@@ -46,7 +47,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>fight1</first-layout>
+    <first-layout>selectmenu</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -1324,6 +1325,14 @@
         </object-type>
         <object-type name="placeholder" sid="141093022298051">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="575117619340434">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Wrap" sid="525984813575585">
+                    <behavior id="wrap" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="571186398933538" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -1398,6 +1407,14 @@
         </object-type>
         <object-type name="cursor" sid="234980097439175">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="178944411442209">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="438126491516523">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="504464489128973" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Downloads\automod\PsychEngine\mods\images\cursor.png">
