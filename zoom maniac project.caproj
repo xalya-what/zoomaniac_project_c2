@@ -1,0 +1,1454 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>zoom maniac project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.xaliangames.zoomaniacprojectindev</app-id>
+    <unique-id>2jyzsche8xfyi</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="C2WebSocket" version="1">WebSocket</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Multiplayer" version="1">Multiplayer</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Car" version="1">Car</behavior>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="NoSave" version="1">No Save</behavior>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+        <behavior author="Scirra" id="wrap" version="1">Wrap</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>fight1</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="backround" sid="403564810897983">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\user\Documents\zoomanic\backround.png" />
+        </object-type>
+        <object-type name="player" sid="256297446039821">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="the old x before you jump" name="oldX" sid="879769591882342" type="number" />
+                <instance-variable comment="the old y before you jump" name="oldy" sid="497578858419584" type="number" />
+                <instance-variable name="blood" sid="142579520384999" type="number" />
+                <instance-variable comment="player online nname" name="name" sid="137114144566533" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="504505614095419">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Wrap" sid="105265385100938">
+                    <behavior id="wrap" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="idle" pingpong="0" repeatcount="1" repeatto="0" sid="102404211244607" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\idle0.png">
+                        <collision-poly>
+                            <point x="0.33" y="0.33" />
+                            <point x="0.5" y="0.3" />
+                            <point x="0.6" y="0.4" />
+                            <point x="0.6" y="0.5" />
+                            <point x="0.82" y="0.82" />
+                            <point x="0.5" y="0.86" />
+                            <point x="0.14" y="0.86" />
+                            <point x="0.32" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="attack" pingpong="0" repeatcount="1" repeatto="0" sid="854682551345533" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\attack0.png">
+                        <collision-poly>
+                            <point x="0.28" y="0.28" />
+                            <point x="0.5" y="0.5" />
+                            <point x="0.8" y="0.5" />
+                            <point x="0.91" y="0.91" />
+                            <point x="0.22" y="0.78" />
+                            <point x="0.23" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\attack1.png">
+                        <collision-poly>
+                            <point x="0.48" y="0.48" />
+                            <point x="0.5" y="0.5" />
+                            <point x="0.7" y="0.3" />
+                            <point x="0.79" y="0.5" />
+                            <point x="0.8" y="0.8" />
+                            <point x="0.5" y="0.8" />
+                            <point x="0.27" y="0.73" />
+                            <point x="0.24" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\attack2.png">
+                        <collision-poly>
+                            <point x="0.62" y="0.62" />
+                            <point x="0.5" y="0.55" />
+                            <point x="0.47" y="0.53" />
+                            <point x="0.45" y="0.5" />
+                            <point x="0.83" y="0.83" />
+                            <point x="0.5" y="0.82" />
+                            <point x="0.31" y="0.69" />
+                            <point x="0.21" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="0" name="walk" pingpong="0" repeatcount="1" repeatto="0" sid="375330148697861" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\walk0.png">
+                        <collision-poly>
+                            <point x="0.4" y="0.4" />
+                            <point x="0.5" y="0.28" />
+                            <point x="0.66" y="0.34" />
+                            <point x="0.66" y="0.5" />
+                            <point x="0.5" y="0.89" />
+                            <point x="0.23" y="0.77" />
+                            <point x="0.36" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\walk1.png">
+                        <collision-poly>
+                            <point x="0.38" y="0.38" />
+                            <point x="0.5" y="0.28" />
+                            <point x="0.64" y="0.36" />
+                            <point x="0.63" y="0.5" />
+                            <point x="0.84" y="0.84" />
+                            <point x="0.5" y="0.87" />
+                            <point x="0.21" y="0.79" />
+                            <point x="0.34" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\walk2.png">
+                        <collision-poly>
+                            <point x="0.34" y="0.34" />
+                            <point x="0.5" y="0.3" />
+                            <point x="0.6" y="0.4" />
+                            <point x="0.6" y="0.5" />
+                            <point x="0.82" y="0.82" />
+                            <point x="0.5" y="0.86" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0.32" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\walk3.png">
+                        <collision-poly>
+                            <point x="0.33" y="0.33" />
+                            <point x="0.5" y="0.32" />
+                            <point x="0.57" y="0.43" />
+                            <point x="0.59" y="0.5" />
+                            <point x="0.79" y="0.79" />
+                            <point x="0.5" y="0.87" />
+                            <point x="0.13" y="0.87" />
+                            <point x="0.3" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\walk4.png">
+                        <collision-poly>
+                            <point x="0.34" y="0.34" />
+                            <point x="0.5" y="0.38" />
+                            <point x="0.54" y="0.46" />
+                            <point x="0.58" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.91" />
+                            <point x="0.34" y="0.66" />
+                            <point x="0.26" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="run" pingpong="0" repeatcount="1" repeatto="0" sid="389548636980904" speed="10">
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanic\run0.png">
+                        <collision-poly>
+                            <point x="0.432432" y="0.432432" />
+                            <point x="0.495495" y="0.423423" />
+                            <point x="0.567568" y="0.432432" />
+                            <point x="0.855856" y="0.855856" />
+                            <point x="0.495495" y="1" />
+                            <point x="0.369369" y="0.630631" />
+                            <point x="0.369369" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanic\run1.png">
+                        <collision-poly>
+                            <point x="0.324324" y="0.324324" />
+                            <point x="0.495495" y="0.279279" />
+                            <point x="0.630631" y="0.369369" />
+                            <point x="0.990991" y="0.495495" />
+                            <point x="0.945946" y="0.945946" />
+                            <point x="0.495495" y="0.981982" />
+                            <point x="0.387387" y="0.612613" />
+                            <point x="0.27027" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanic\run2.png">
+                        <collision-poly>
+                            <point x="0.324324" y="0.324324" />
+                            <point x="0.495495" y="0.279279" />
+                            <point x="0.630631" y="0.369369" />
+                            <point x="0.963964" y="0.495495" />
+                            <point x="0.945946" y="0.945946" />
+                            <point x="0.495495" y="0.981982" />
+                            <point x="0.468468" y="0.531532" />
+                            <point x="0.396396" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanic\run3.png">
+                        <collision-poly>
+                            <point x="0.207207" y="0.207207" />
+                            <point x="0.495495" y="0.225225" />
+                            <point x="0.837838" y="0.162162" />
+                            <point x="0.900901" y="0.495495" />
+                            <point x="0.954955" y="0.954955" />
+                            <point x="0.495495" y="0.990991" />
+                            <point x="0.0990991" y="0.900901" />
+                            <point x="0.45045" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="jump" pingpong="0" repeatcount="1" repeatto="0" sid="880951866326728" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\jump0.png">
+                        <collision-poly>
+                            <point x="0.33" y="0.33" />
+                            <point x="0.5" y="0.31" />
+                            <point x="0.57" y="0.43" />
+                            <point x="0.6" y="0.5" />
+                            <point x="0.77" y="0.77" />
+                            <point x="0.5" y="0.88" />
+                            <point x="0.36" y="0.64" />
+                            <point x="0.31" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\jump1.png">
+                        <collision-poly>
+                            <point x="0.27" y="0.27" />
+                            <point x="0.5" y="0.37" />
+                            <point x="0.56" y="0.44" />
+                            <point x="0.86" y="0.5" />
+                            <point x="0.68" y="0.68" />
+                            <point x="0.5" y="0.79" />
+                            <point x="0.17" y="0.83" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\jump2.png">
+                        <collision-poly>
+                            <point x="0.26" y="0.26" />
+                            <point x="0.6" y="0.4" />
+                            <point x="0.79" y="0.5" />
+                            <point x="0.5" y="0.84" />
+                            <point x="0.38" y="0.62" />
+                            <point x="0.24" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="death" pingpong="0" repeatcount="1" repeatto="0" sid="578042659797990" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\hurt.png">
+                        <collision-poly>
+                            <point x="0.31" y="0.31" />
+                            <point x="0.5" y="0.46" />
+                            <point x="0.53" y="0.47" />
+                            <point x="0.56" y="0.5" />
+                            <point x="0.71" y="0.71" />
+                            <point x="0.5" y="0.72" />
+                            <point x="0.29" y="0.71" />
+                            <point x="0.28" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="16" loop="0" name="taunt" pingpong="0" repeatcount="1" repeatto="0" sid="670301808062613" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\attack0.png">
+                        <collision-poly>
+                            <point x="0.33" y="0.33" />
+                            <point x="0.5" y="0.3" />
+                            <point x="0.6" y="0.4" />
+                            <point x="0.61" y="0.5" />
+                            <point x="0.82" y="0.82" />
+                            <point x="0.5" y="0.86" />
+                            <point x="0.14" y="0.86" />
+                            <point x="0.32" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\attack1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\attack2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\hurt.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\idle0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\jump0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\jump1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\jump2.png" />
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanicbreak\run1.png" />
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanicbreak\run2.png" />
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanicbreak\run3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\walk0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\walk1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\walk2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\walk3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\walk4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="778720497661117">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Gamepad" sid="122035843800665">
+            <plugin id="gamepad" />
+        </object-type>
+        <object-type name="FAKEplayer" sid="949285856761107">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="healthhing" sid="144518603572731" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="812279365410656">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+                <behavior-type name="Wrap" sid="843394253169136">
+                    <behavior id="wrap" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="idle" pingpong="0" repeatcount="1" repeatto="0" sid="230160569048710" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\fakezoomanic\idle0.png">
+                        <collision-poly>
+                            <point x="0.33" y="0.33" />
+                            <point x="0.5" y="0.3" />
+                            <point x="0.6" y="0.4" />
+                            <point x="0.6" y="0.5" />
+                            <point x="0.82" y="0.82" />
+                            <point x="0.5" y="0.86" />
+                            <point x="0.14" y="0.86" />
+                            <point x="0.32" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="0" name="walk" pingpong="0" repeatcount="1" repeatto="0" sid="566798393503019" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\fakezoomanic\walk0.png">
+                        <collision-poly>
+                            <point x="0.4" y="0.4" />
+                            <point x="0.5" y="0.28" />
+                            <point x="0.66" y="0.34" />
+                            <point x="0.66" y="0.5" />
+                            <point x="0.5" y="0.89" />
+                            <point x="0.23" y="0.77" />
+                            <point x="0.36" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\fakezoomanic\walk1.png">
+                        <collision-poly>
+                            <point x="0.38" y="0.38" />
+                            <point x="0.5" y="0.28" />
+                            <point x="0.64" y="0.36" />
+                            <point x="0.63" y="0.5" />
+                            <point x="0.84" y="0.84" />
+                            <point x="0.5" y="0.87" />
+                            <point x="0.21" y="0.79" />
+                            <point x="0.34" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\fakezoomanic\walk2.png">
+                        <collision-poly>
+                            <point x="0.34" y="0.34" />
+                            <point x="0.5" y="0.3" />
+                            <point x="0.6" y="0.4" />
+                            <point x="0.6" y="0.5" />
+                            <point x="0.82" y="0.82" />
+                            <point x="0.5" y="0.86" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0.32" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\fakezoomanic\walk3.png">
+                        <collision-poly>
+                            <point x="0.33" y="0.33" />
+                            <point x="0.5" y="0.32" />
+                            <point x="0.57" y="0.43" />
+                            <point x="0.59" y="0.5" />
+                            <point x="0.79" y="0.79" />
+                            <point x="0.5" y="0.87" />
+                            <point x="0.13" y="0.87" />
+                            <point x="0.3" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\fakezoomanic\walk4.png">
+                        <collision-poly>
+                            <point x="0.34" y="0.34" />
+                            <point x="0.5" y="0.38" />
+                            <point x="0.54" y="0.46" />
+                            <point x="0.58" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.91" />
+                            <point x="0.34" y="0.66" />
+                            <point x="0.26" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="hurt" pingpong="0" repeatcount="1" repeatto="0" sid="728149729736627" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\fakezoomanic\hurt0.png">
+                        <collision-poly>
+                            <point x="0.31" y="0.31" />
+                            <point x="0.5" y="0.46" />
+                            <point x="0.53" y="0.47" />
+                            <point x="0.56" y="0.5" />
+                            <point x="0.71" y="0.71" />
+                            <point x="0.5" y="0.72" />
+                            <point x="0.29" y="0.71" />
+                            <point x="0.28" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="stonehand" sid="345884675408960">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="266012696088130">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="446926381283390">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="Wrap" sid="897534246082066">
+                    <behavior id="wrap" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="836730055970706" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="floot" sid="479733999553829">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="925243661881377">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+            <tiles>
+                <tile id="4">
+                    <collision-poly>
+                        <point x="0" y="1" />
+                        <point x="0.210938" y="1" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+            </tiles>
+        </object-type>
+        <object-type name="WebSocket" sid="367199989338793">
+            <plugin id="C2WebSocket" />
+        </object-type>
+        <object-type name="blood" sid="331025790930984">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="604329842420958">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="612004212058164">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="596361636416262" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\user\Documents\zoomanicphase3\thing.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="text" sid="457532507448840">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="bloodtext" sid="484797506717681">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="Mouse" sid="497304081304232">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="deadplayer" sid="697304633351448">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="877133524859289">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="177584200962952" speed="5">
+                    <frame duration="1" hotspotX="0.449074" hotspotY="0.380711" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Multiplayer" sid="367350853960848">
+            <plugin id="Multiplayer" />
+        </object-type>
+        <object-type name="server" sid="388858380068984">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="name" sid="142682530885154">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="enemyHP" sid="338320887188440">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TiledBackground" sid="942920965347314">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="wood" sid="493210920052402">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="314901867297979">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="334470143819314" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player2" sid="419187346867115">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="blood" sid="369211573281221" type="number" />
+                <instance-variable comment="player online nname" name="name" sid="799092360804968" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="437252594160463">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Car" sid="340407814631285">
+                    <behavior id="Car" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="716287297383186">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="idle" pingpong="0" repeatcount="1" repeatto="0" sid="995112503297269" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\idle0.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.32" />
+                            <point x="0.86" y="0.14" />
+                            <point x="0.86" y="0.5" />
+                            <point x="0.82" y="0.82" />
+                            <point x="0.5" y="0.6" />
+                            <point x="0.4" y="0.6" />
+                            <point x="0.3" y="0.5" />
+                            <point x="0.33" y="0.33" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="walk" pingpong="0" repeatcount="1" repeatto="0" sid="785693670320846" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\walk0.png">
+                        <collision-poly>
+                            <point x="0.4" y="0.4" />
+                            <point x="0.5" y="0.28" />
+                            <point x="0.66" y="0.34" />
+                            <point x="0.66" y="0.5" />
+                            <point x="0.5" y="0.89" />
+                            <point x="0.23" y="0.77" />
+                            <point x="0.36" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="playerprojectile" sid="807941041368840">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="the old x before you jump" name="oldX" sid="728883849367919" type="number" />
+                <instance-variable comment="the old y before you jump" name="oldy" sid="444471074195164" type="number" />
+                <instance-variable name="blood" sid="586138917733704" type="number" />
+                <instance-variable comment="player online nname" name="name" sid="681856789324464" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Physics" sid="416141594265771">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="DragDrop" sid="335248289423055">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="999793043479852">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="idle" pingpong="0" repeatcount="1" repeatto="0" sid="325258528066147" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\idle0.png">
+                        <collision-poly>
+                            <point x="0.33" y="0.33" />
+                            <point x="0.5" y="0.3" />
+                            <point x="0.6" y="0.4" />
+                            <point x="0.6" y="0.5" />
+                            <point x="0.82" y="0.82" />
+                            <point x="0.5" y="0.86" />
+                            <point x="0.14" y="0.86" />
+                            <point x="0.32" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="powerorbs" sid="820592651693679">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="633672293638080">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="345385634483406">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="897650038023103">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="697127719985846" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="faceamoyer" sid="923939900666842">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="603636732038206">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Wrap" sid="671851540820798">
+                    <behavior id="wrap" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="601948722885661" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="taunteffect" sid="208755020072492">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="475188545555649">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="221660347031392" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fest" sid="595608473155705">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="the old x before you jump" name="oldX" sid="894753242524079" type="number" />
+                <instance-variable comment="the old y before you jump" name="oldy" sid="630830752913017" type="number" />
+                <instance-variable name="blood" sid="490850738092222" type="number" />
+                <instance-variable comment="player online nname" name="name" sid="628183049728732" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="run" pingpong="0" repeatcount="1" repeatto="0" sid="431235695465941" speed="10">
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanic\run0.png">
+                        <collision-poly>
+                            <point x="0.432432" y="0.432432" />
+                            <point x="0.495495" y="0.423423" />
+                            <point x="0.567568" y="0.432432" />
+                            <point x="0.855856" y="0.855856" />
+                            <point x="0.495495" y="1" />
+                            <point x="0.369369" y="0.630631" />
+                            <point x="0.369369" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanic\run1.png">
+                        <collision-poly>
+                            <point x="0.324324" y="0.324324" />
+                            <point x="0.495495" y="0.279279" />
+                            <point x="0.630631" y="0.369369" />
+                            <point x="0.990991" y="0.495495" />
+                            <point x="0.945946" y="0.945946" />
+                            <point x="0.495495" y="0.981982" />
+                            <point x="0.387387" y="0.612613" />
+                            <point x="0.27027" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanic\run2.png">
+                        <collision-poly>
+                            <point x="0.324324" y="0.324324" />
+                            <point x="0.495495" y="0.279279" />
+                            <point x="0.630631" y="0.369369" />
+                            <point x="0.963964" y="0.495495" />
+                            <point x="0.945946" y="0.945946" />
+                            <point x="0.495495" y="0.981982" />
+                            <point x="0.468468" y="0.531532" />
+                            <point x="0.396396" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanic\run3.png">
+                        <collision-poly>
+                            <point x="0.207207" y="0.207207" />
+                            <point x="0.495495" y="0.225225" />
+                            <point x="0.837838" y="0.162162" />
+                            <point x="0.900901" y="0.495495" />
+                            <point x="0.954955" y="0.954955" />
+                            <point x="0.495495" y="0.990991" />
+                            <point x="0.0990991" y="0.900901" />
+                            <point x="0.45045" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="singleplayerbutton" sid="438107971035678">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="multiplayerbutton" sid="298626708170551">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="loadbutton" sid="828692210870342">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="gotoserverbutton" sid="854810789911373">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="serverbox" sid="869772787103182">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="playeronline" sid="759618551675331">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="the old x before you jump" name="oldX" sid="438921365669170" type="number" />
+                <instance-variable comment="the old y before you jump" name="oldy" sid="331095904870008" type="number" />
+                <instance-variable name="blood" sid="145909356326934" type="number" />
+                <instance-variable comment="player online nname" name="name" sid="954907969568447" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Wrap" sid="873606498520227">
+                    <behavior id="wrap" />
+                </behavior-type>
+                <behavior-type name="NoSave" sid="609701000691812">
+                    <behavior id="NoSave" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="idle" pingpong="0" repeatcount="1" repeatto="0" sid="872174162972324" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\idle0.png">
+                        <collision-poly>
+                            <point x="0.33" y="0.33" />
+                            <point x="0.5" y="0.3" />
+                            <point x="0.6" y="0.4" />
+                            <point x="0.6" y="0.5" />
+                            <point x="0.82" y="0.82" />
+                            <point x="0.5" y="0.86" />
+                            <point x="0.14" y="0.86" />
+                            <point x="0.32" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="attack" pingpong="0" repeatcount="1" repeatto="0" sid="339368335564606" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\attack0.png">
+                        <collision-poly>
+                            <point x="0.28" y="0.28" />
+                            <point x="0.5" y="0.5" />
+                            <point x="0.8" y="0.5" />
+                            <point x="0.91" y="0.91" />
+                            <point x="0.22" y="0.78" />
+                            <point x="0.23" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\attack1.png">
+                        <collision-poly>
+                            <point x="0.48" y="0.48" />
+                            <point x="0.5" y="0.5" />
+                            <point x="0.7" y="0.3" />
+                            <point x="0.79" y="0.5" />
+                            <point x="0.8" y="0.8" />
+                            <point x="0.5" y="0.8" />
+                            <point x="0.27" y="0.73" />
+                            <point x="0.24" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\attack2.png">
+                        <collision-poly>
+                            <point x="0.62" y="0.62" />
+                            <point x="0.5" y="0.55" />
+                            <point x="0.47" y="0.53" />
+                            <point x="0.45" y="0.5" />
+                            <point x="0.83" y="0.83" />
+                            <point x="0.5" y="0.82" />
+                            <point x="0.31" y="0.69" />
+                            <point x="0.21" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="0" name="walk" pingpong="0" repeatcount="1" repeatto="0" sid="402068117277719" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\walk0.png">
+                        <collision-poly>
+                            <point x="0.4" y="0.4" />
+                            <point x="0.5" y="0.28" />
+                            <point x="0.66" y="0.34" />
+                            <point x="0.66" y="0.5" />
+                            <point x="0.5" y="0.89" />
+                            <point x="0.23" y="0.77" />
+                            <point x="0.36" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\walk1.png">
+                        <collision-poly>
+                            <point x="0.38" y="0.38" />
+                            <point x="0.5" y="0.28" />
+                            <point x="0.64" y="0.36" />
+                            <point x="0.63" y="0.5" />
+                            <point x="0.84" y="0.84" />
+                            <point x="0.5" y="0.87" />
+                            <point x="0.21" y="0.79" />
+                            <point x="0.34" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\walk2.png">
+                        <collision-poly>
+                            <point x="0.34" y="0.34" />
+                            <point x="0.5" y="0.3" />
+                            <point x="0.6" y="0.4" />
+                            <point x="0.6" y="0.5" />
+                            <point x="0.82" y="0.82" />
+                            <point x="0.5" y="0.86" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0.32" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\walk3.png">
+                        <collision-poly>
+                            <point x="0.33" y="0.33" />
+                            <point x="0.5" y="0.32" />
+                            <point x="0.57" y="0.43" />
+                            <point x="0.59" y="0.5" />
+                            <point x="0.79" y="0.79" />
+                            <point x="0.5" y="0.87" />
+                            <point x="0.13" y="0.87" />
+                            <point x="0.3" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\walk4.png">
+                        <collision-poly>
+                            <point x="0.34" y="0.34" />
+                            <point x="0.5" y="0.38" />
+                            <point x="0.54" y="0.46" />
+                            <point x="0.58" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.91" />
+                            <point x="0.34" y="0.66" />
+                            <point x="0.26" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="run" pingpong="0" repeatcount="1" repeatto="0" sid="798498390879752" speed="10">
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanic\run0.png">
+                        <collision-poly>
+                            <point x="0.432432" y="0.432432" />
+                            <point x="0.495495" y="0.423423" />
+                            <point x="0.567568" y="0.432432" />
+                            <point x="0.855856" y="0.855856" />
+                            <point x="0.495495" y="1" />
+                            <point x="0.369369" y="0.630631" />
+                            <point x="0.369369" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanic\run1.png">
+                        <collision-poly>
+                            <point x="0.324324" y="0.324324" />
+                            <point x="0.495495" y="0.279279" />
+                            <point x="0.630631" y="0.369369" />
+                            <point x="0.990991" y="0.495495" />
+                            <point x="0.945946" y="0.945946" />
+                            <point x="0.495495" y="0.981982" />
+                            <point x="0.387387" y="0.612613" />
+                            <point x="0.27027" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanic\run2.png">
+                        <collision-poly>
+                            <point x="0.324324" y="0.324324" />
+                            <point x="0.495495" y="0.279279" />
+                            <point x="0.630631" y="0.369369" />
+                            <point x="0.963964" y="0.495495" />
+                            <point x="0.945946" y="0.945946" />
+                            <point x="0.495495" y="0.981982" />
+                            <point x="0.468468" y="0.531532" />
+                            <point x="0.396396" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanic\run3.png">
+                        <collision-poly>
+                            <point x="0.207207" y="0.207207" />
+                            <point x="0.495495" y="0.225225" />
+                            <point x="0.837838" y="0.162162" />
+                            <point x="0.900901" y="0.495495" />
+                            <point x="0.954955" y="0.954955" />
+                            <point x="0.495495" y="0.990991" />
+                            <point x="0.0990991" y="0.900901" />
+                            <point x="0.45045" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="jump" pingpong="0" repeatcount="1" repeatto="0" sid="177620598857843" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\jump0.png">
+                        <collision-poly>
+                            <point x="0.33" y="0.33" />
+                            <point x="0.5" y="0.31" />
+                            <point x="0.57" y="0.43" />
+                            <point x="0.6" y="0.5" />
+                            <point x="0.77" y="0.77" />
+                            <point x="0.5" y="0.88" />
+                            <point x="0.36" y="0.64" />
+                            <point x="0.31" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\jump1.png">
+                        <collision-poly>
+                            <point x="0.27" y="0.27" />
+                            <point x="0.5" y="0.37" />
+                            <point x="0.56" y="0.44" />
+                            <point x="0.86" y="0.5" />
+                            <point x="0.68" y="0.68" />
+                            <point x="0.5" y="0.79" />
+                            <point x="0.17" y="0.83" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\jump2.png">
+                        <collision-poly>
+                            <point x="0.26" y="0.26" />
+                            <point x="0.6" y="0.4" />
+                            <point x="0.79" y="0.5" />
+                            <point x="0.5" y="0.84" />
+                            <point x="0.38" y="0.62" />
+                            <point x="0.24" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="death" pingpong="0" repeatcount="1" repeatto="0" sid="656277410021068" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\hurt.png">
+                        <collision-poly>
+                            <point x="0.31" y="0.31" />
+                            <point x="0.5" y="0.46" />
+                            <point x="0.53" y="0.47" />
+                            <point x="0.56" y="0.5" />
+                            <point x="0.71" y="0.71" />
+                            <point x="0.5" y="0.72" />
+                            <point x="0.29" y="0.71" />
+                            <point x="0.28" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="16" loop="0" name="taunt" pingpong="0" repeatcount="1" repeatto="0" sid="266785446046103" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\attack0.png">
+                        <collision-poly>
+                            <point x="0.33" y="0.33" />
+                            <point x="0.5" y="0.3" />
+                            <point x="0.6" y="0.4" />
+                            <point x="0.61" y="0.5" />
+                            <point x="0.82" y="0.82" />
+                            <point x="0.5" y="0.86" />
+                            <point x="0.14" y="0.86" />
+                            <point x="0.32" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\attack1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\attack2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\hurt.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\idle0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\jump0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\jump1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\jump2.png" />
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanicbreak\run1.png" />
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanicbreak\run2.png" />
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanicbreak\run3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\walk0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\walk1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\walk2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\walk3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanicbreak\walk4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="serverframeholder" sid="332150605426350">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="681072568995233" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sky" sid="286365614408189">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="130463373870107" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grass" sid="792304782512382">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="699825111536099">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+            <tiles>
+                <tile id="4">
+                    <collision-poly>
+                        <point x="0" y="1" />
+                        <point x="0.210938" y="1" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+            </tiles>
+        </object-type>
+        <object-type name="dirt" sid="279825718990360">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="228580790780895">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+            <tiles>
+                <tile id="4">
+                    <collision-poly>
+                        <point x="0" y="1" />
+                        <point x="0.210938" y="1" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+            </tiles>
+        </object-type>
+        <object-type name="shadow" sid="828852877893814">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="477146660002727" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text2" sid="600748326433258">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Button" sid="234587471075655">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Button2" sid="950088004131346">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Button3" sid="235577448515815">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="playercutscene" sid="691354327875473">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="the old x before you jump" name="oldX" sid="903855673301916" type="number" />
+                <instance-variable comment="the old y before you jump" name="oldy" sid="456745183638329" type="number" />
+                <instance-variable name="blood" sid="412150354133548" type="number" />
+                <instance-variable comment="player online nname" name="name" sid="470158939862590" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="236084877176797">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="648095154059610">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="idle" pingpong="0" repeatcount="1" repeatto="0" sid="994570437229876" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\idle0.png">
+                        <collision-poly>
+                            <point x="0.33" y="0.33" />
+                            <point x="0.5" y="0.3" />
+                            <point x="0.6" y="0.4" />
+                            <point x="0.6" y="0.5" />
+                            <point x="0.82" y="0.82" />
+                            <point x="0.5" y="0.86" />
+                            <point x="0.14" y="0.86" />
+                            <point x="0.32" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="0" name="walk" pingpong="0" repeatcount="1" repeatto="0" sid="134625292639934" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\walk0.png">
+                        <collision-poly>
+                            <point x="0.4" y="0.4" />
+                            <point x="0.5" y="0.28" />
+                            <point x="0.66" y="0.34" />
+                            <point x="0.66" y="0.5" />
+                            <point x="0.5" y="0.89" />
+                            <point x="0.23" y="0.77" />
+                            <point x="0.36" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\walk1.png">
+                        <collision-poly>
+                            <point x="0.38" y="0.38" />
+                            <point x="0.5" y="0.28" />
+                            <point x="0.64" y="0.36" />
+                            <point x="0.63" y="0.5" />
+                            <point x="0.84" y="0.84" />
+                            <point x="0.5" y="0.87" />
+                            <point x="0.21" y="0.79" />
+                            <point x="0.34" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\walk2.png">
+                        <collision-poly>
+                            <point x="0.34" y="0.34" />
+                            <point x="0.5" y="0.3" />
+                            <point x="0.6" y="0.4" />
+                            <point x="0.6" y="0.5" />
+                            <point x="0.82" y="0.82" />
+                            <point x="0.5" y="0.86" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0.32" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\walk3.png">
+                        <collision-poly>
+                            <point x="0.33" y="0.33" />
+                            <point x="0.5" y="0.32" />
+                            <point x="0.57" y="0.43" />
+                            <point x="0.59" y="0.5" />
+                            <point x="0.79" y="0.79" />
+                            <point x="0.5" y="0.87" />
+                            <point x="0.13" y="0.87" />
+                            <point x="0.3" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Documents\zoomanic\walk4.png">
+                        <collision-poly>
+                            <point x="0.34" y="0.34" />
+                            <point x="0.5" y="0.38" />
+                            <point x="0.54" y="0.46" />
+                            <point x="0.58" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.91" />
+                            <point x="0.34" y="0.66" />
+                            <point x="0.26" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="run" pingpong="0" repeatcount="1" repeatto="0" sid="559005139651887" speed="10">
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanic\run0.png">
+                        <collision-poly>
+                            <point x="0.432432" y="0.432432" />
+                            <point x="0.495495" y="0.423423" />
+                            <point x="0.567568" y="0.432432" />
+                            <point x="0.855856" y="0.855856" />
+                            <point x="0.495495" y="1" />
+                            <point x="0.369369" y="0.630631" />
+                            <point x="0.369369" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanic\run1.png">
+                        <collision-poly>
+                            <point x="0.324324" y="0.324324" />
+                            <point x="0.495495" y="0.279279" />
+                            <point x="0.630631" y="0.369369" />
+                            <point x="0.990991" y="0.495495" />
+                            <point x="0.945946" y="0.945946" />
+                            <point x="0.495495" y="0.981982" />
+                            <point x="0.387387" y="0.612613" />
+                            <point x="0.27027" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanic\run2.png">
+                        <collision-poly>
+                            <point x="0.324324" y="0.324324" />
+                            <point x="0.495495" y="0.279279" />
+                            <point x="0.630631" y="0.369369" />
+                            <point x="0.963964" y="0.495495" />
+                            <point x="0.945946" y="0.945946" />
+                            <point x="0.495495" y="0.981982" />
+                            <point x="0.468468" y="0.531532" />
+                            <point x="0.396396" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.504505" original-source="C:\Users\user\Documents\zoomanic\run3.png">
+                        <collision-poly>
+                            <point x="0.207207" y="0.207207" />
+                            <point x="0.495495" y="0.225225" />
+                            <point x="0.837838" y="0.162162" />
+                            <point x="0.900901" y="0.495495" />
+                            <point x="0.954955" y="0.954955" />
+                            <point x="0.495495" y="0.990991" />
+                            <point x="0.0990991" y="0.900901" />
+                            <point x="0.45045" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="haldanieldead" sid="404513056614906">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="oldx" sid="793286503990190" type="number" />
+                <instance-variable name="oldy" sid="881093388291203" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="962129422207598">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="436221405028864" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="haldaniel" sid="233005306969183">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="oldx" sid="290655912141103" type="number" />
+                <instance-variable name="oldy" sid="306273993173173" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Wrap" sid="703012513556985">
+                    <behavior id="wrap" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="429291494758192" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="blood2" sid="153900884632966">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="375937120443577">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="417403674393051">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="403162764337694" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\user\Documents\zoomanicphase3\thing.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="blood3" sid="321855381639335">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="980057156637353">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="656345124365216">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="799422414571977" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\user\Documents\zoomanicphase3\thing.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="placeholder" sid="141093022298051">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="571186398933538" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="thing1" sid="748121465193499">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="953172733206442" speed="5">
+                    <frame duration="1" hotspotX="0.50029" hotspotY="0.5" original-source="C:\Users\user\Downloads\test1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="thing2" sid="868431965051569">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="465679195233294" speed="5">
+                    <frame duration="1" hotspotX="0.500289" hotspotY="0.500516" original-source="C:\Users\user\Downloads\test2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="thing3" sid="206733539398463">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="504273022739148" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501961" original-source="C:\Users\user\Downloads\test3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="papperman" sid="779580736352844">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="442186499251712">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="201326890450177" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503145" original-source="C:\Users\user\Downloads\λήψη.png">
+                        <collision-poly>
+                            <point x="0.270492" y="0.207547" />
+                            <point x="0.5" y="0.0125786" />
+                            <point x="0.737705" y="0.201258" />
+                            <point x="0.877049" y="0.496855" />
+                            <point x="0.655738" y="0.735849" />
+                            <point x="0.5" y="0.968553" />
+                            <point x="0.344262" y="0.735849" />
+                            <point x="0.0983607" y="0.496855" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="moodaf" sid="758076393674482">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="688627886993858" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Downloads\ohno0.png">
+                        <collision-poly>
+                            <point x="0.009" y="0.009" />
+                            <point x="0.977" y="0.023" />
+                            <point x="0.956" y="0.5" />
+                            <point x="0.852" y="0.852" />
+                            <point x="0.5" y="0.925" />
+                            <point x="0.081" y="0.919" />
+                            <point x="0.711" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cursor" sid="234980097439175">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="504464489128973" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Downloads\automod\PsychEngine\mods\images\cursor.png">
+                        <collision-poly>
+                            <point x="0.21" y="0.21" />
+                            <point x="0.5" y="0.26" />
+                            <point x="0.64" y="0.36" />
+                            <point x="0.76" y="0.5" />
+                            <point x="0.82" y="0.82" />
+                            <point x="0.5" y="0.7" />
+                            <point x="0.32" y="0.68" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>fight1.xml</layout>
+        <layout>mood.xml</layout>
+        <layout>levelmenu.xml</layout>
+        <layout>megabossfight.xml</layout>
+        <layout>selectmenu.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>DEAFULT_events.xml</event-sheet>
+        <event-sheet>MEGA_events.xml</event-sheet>
+        <event-sheet>TITLE_events.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="5" />
+        <global-instance type="Gamepad" uid="6">
+            <properties>
+                <analog-deadzone>25</analog-deadzone>
+            </properties>
+        </global-instance>
+        <global-instance type="WebSocket" uid="3" />
+        <global-instance type="Mouse" uid="11" />
+        <global-instance type="Multiplayer" uid="13" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>TITLE_events</name>
+    <events>
+        <event-block sid="368603983225218">
+            <conditions>
+                <condition id="0" name="On clicked" sid="626998067608843" type="loadbutton" />
+            </conditions>
+            <actions>
+                <action id="-37" name="Load" sid="508564999648711" type="System">
+                    <param id="0" name="Slot">&quot;ZOOMANIAC_singleplayersave&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="894222626539852">
+            <conditions>
+                <condition id="0" name="On clicked" sid="992288955605335" type="loadbutton" />
+                <condition id="2" name="Key is down" sid="587901792150339" type="Keyboard">
+                    <param id="0" name="Key">77</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Connect" sid="114114379712216" type="Multiplayer">
+                    <param id="0" name="Server">&quot;wss://zoomserver.com&quot;</param>
+                </action>
+                <action id="-37" name="Load" sid="629365535129694" type="System">
+                    <param id="0" name="Slot">&quot;ZOOMANIAC_multiplayersave&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="146465525687916">
+            <conditions>
+                <condition id="0" name="On clicked" sid="192188889675626" type="singleplayerbutton" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="165873063798933" type="System">
+                    <param id="0" name="Layout">levelmenu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="319554596281566">
+            <conditions>
+                <condition id="0" name="On clicked" sid="555438327384595" type="multiplayerbutton" />
+            </conditions>
+            <actions>
+                <action id="1" name="Connect" sid="439863068307122" type="Multiplayer">
+                    <param id="0" name="Server">&quot;wss://zoomserver.com&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="219577052223965">
+            <conditions>
+                <condition id="0" name="On clicked" sid="745078126457525" type="gotoserverbutton" />
+            </conditions>
+            <actions>
+                <action id="1" name="Connect" sid="578256517161142" type="Multiplayer">
+                    <param id="0" name="Server">serverbox.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="852701642338670">
+            <conditions>
+                <condition id="1" name="On error" sid="223464843943271" type="Multiplayer" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="670591331288413" type="serverframeholder">
+                    <param id="0" name="Object">server</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="564143954818323" type="server">
+                    <param id="0" name="X">random(40)</param>
+                    <param id="1" name="Y">random(10)</param>
+                </action>
+                <action id="0" name="Set text" sid="717946021212583" type="server">
+                    <param id="0" name="Text">&quot;it looks like you don&apos;t have internet. check your internet cable or wifi something might be up there!&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="624714172782080" type="System">
+                    <param id="0" name="Seconds">10.0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="693439789262876" type="server" />
+            </actions>
+        </event-block>
+        <event-block sid="556143123272163">
+            <conditions>
+                <condition id="6" name="On left room" sid="745768850379197" type="Multiplayer" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="815516045402697" type="serverframeholder">
+                    <param id="0" name="Object">server</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="179243693670400" type="server">
+                    <param id="0" name="X">random(40)</param>
+                    <param id="1" name="Y">serverframeholder.Y</param>
+                </action>
+                <action id="0" name="Set text" sid="850926411058553" type="server">
+                    <param id="0" name="Text">&quot;it looks like your multi player game server had crashed crash states like this can make the game unstable and uplayble that&apos;s we kicked you out of there!&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="301657568437848" type="System">
+                    <param id="0" name="Seconds">10.0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="670815236014693" type="server" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

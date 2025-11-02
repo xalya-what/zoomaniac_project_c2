@@ -1,0 +1,974 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MEGA_events</name>
+    <events>
+        <event-block sid="317732294485491">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="968616106407083" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="277491959836200" type="FAKEplayer">
+                    <param id="0" name="X">player.x</param>
+                    <param id="1" name="Y">player.y</param>
+                </action>
+                <action behavior="Pathfinding" id="7" name="Set max speed" sid="220685640696306" type="FAKEplayer">
+                    <param id="0" name="Speed">20</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="871250794281999" type="stonehand">
+                    <param id="0" name="Object">floot</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="767835713493409" type="text">
+                    <param id="0" name="X">player2.x</param>
+                    <param id="1" name="Y">player2.Y +94</param>
+                </action>
+                <action id="-3" name="Set position" sid="845635396871835" type="bloodtext">
+                    <param id="0" name="X">player2.x +94</param>
+                    <param id="1" name="Y">player2.Y +94</param>
+                </action>
+                <action id="0" name="Set text" sid="936201095798010" type="bloodtext">
+                    <param id="0" name="Text">player2.blood</param>
+                </action>
+                <action id="0" name="Set text" sid="472704616265409" type="enemyHP">
+                    <param id="0" name="Text">FAKEplayer.healthhing</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="188181622013742">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="841381751103293" type="FAKEplayer" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="814672571131134" type="FAKEplayer">
+                    <param id="0" name="Animation">&quot;walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="397197851174035">
+            <conditions>
+                <condition behavior="Pathfinding" id="5" name="On arrived" sid="751545183690343" type="FAKEplayer" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="418634772424505" type="FAKEplayer">
+                    <param id="0" name="Animation">&quot;walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="204584865862699">
+            <conditions>
+                <condition behavior="Pathfinding" id="1" name="On failed to find path" sid="815950391971683" type="FAKEplayer" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="630541018231266" type="FAKEplayer">
+                    <param id="0" name="Animation">&quot;idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="922383063446771">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="590701606325896" type="Keyboard">
+                    <param id="0" name="Key">89</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="664303228555533" type="player2">
+                    <param id="0" name="Object">stonehand</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="371814010331305">
+            <conditions>
+                <condition id="6" name="On button pressed" sid="117587089786875" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="114975897237495" type="player2">
+                    <param id="0" name="Object">stonehand</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="798943679088424">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="429650182414719" type="Keyboard">
+                    <param id="0" name="Key">88</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="190132670890305" type="player2">
+                    <param id="0" name="Object">stonehand</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="295061261065376" type="deadplayer">
+                    <param id="0" name="Object">stonehand</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="186038940578726">
+            <conditions>
+                <condition id="6" name="On button pressed" sid="263018169644758" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="206191918860932" type="player2">
+                    <param id="0" name="Object">stonehand</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="586249943191669" type="deadplayer">
+                    <param id="0" name="Object">stonehand</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="206903020680193">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="420457709849809" type="Keyboard">
+                    <param id="0" name="Key">188</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="746085060903044" type="player2">
+                    <param id="0" name="Instance variable">blood</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="328572160170024">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="144592282095147" type="FAKEplayer">
+                    <param id="0" name="Object">stonehand</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="221996668275780" type="FAKEplayer">
+                    <param id="0" name="Animation">&quot;hurt&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="220872903085597" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="842051544249184" type="FAKEplayer">
+                    <param id="0" name="Instance variable">healthhing</param>
+                    <param id="1" name="Value">self.healthhing -1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="435709559988197">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="544945706308286" type="FAKEplayer">
+                    <param id="0" name="Object">playerprojectile</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="432312245836078" type="FAKEplayer">
+                    <param id="0" name="Animation">&quot;hurt&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="527706569666988" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="528109671141828" type="FAKEplayer">
+                    <param id="0" name="Instance variable">healthhing</param>
+                    <param id="1" name="Value">self.healthhing -1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="239680111554220">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="579584427618792" type="Keyboard">
+                    <param id="0" name="Key">109</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-36" name="Save" sid="235560631941440" type="System">
+                    <param id="0" name="Slot">WebSocket.MessageText</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="969325383678531">
+            <conditions>
+                <condition id="6" name="On button pressed" sid="991817178472171" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-36" name="Save" sid="806577370485427" type="System">
+                    <param id="0" name="Slot">WebSocket.MessageText</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="493907733368801">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="421095083996325" type="Keyboard">
+                    <param id="0" name="Key">107</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-37" name="Load" sid="716470429806856" type="System">
+                    <param id="0" name="Slot">WebSocket.MessageText</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="567970501375353">
+            <conditions>
+                <condition id="6" name="On button pressed" sid="572573933107062" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-37" name="Load" sid="271100338435841" type="System">
+                    <param id="0" name="Slot">WebSocket.MessageText</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="829075280245100">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="734218231729624" type="FAKEplayer">
+                    <param id="0" name="Object">player2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="747220662390654" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="243670609289580" type="player2">
+                    <param id="0" name="Instance variable">blood</param>
+                    <param id="1" name="Value">self.blood -1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="421886418904334">
+            <conditions>
+                <condition id="1" name="On any key pressed" sid="999447611783658" type="Keyboard" />
+                <condition id="1" name="Is overlapping another object" sid="310310969646969" type="player2">
+                    <param id="0" name="Object">FAKEplayer</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="513543271783927" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="948674587280507" type="player2">
+                    <param id="0" name="Instance variable">blood</param>
+                    <param id="1" name="Value">self.blood -1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="851035408032300">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="754215793951976" type="Keyboard">
+                    <param id="0" name="Key">13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="564619144808924" type="player2">
+                    <param id="0" name="X">mouse.x</param>
+                    <param id="1" name="Y">mouse.y</param>
+                </action>
+                <action id="-3" name="Set position" sid="775424639232192" type="deadplayer">
+                    <param id="0" name="X">mouse.x</param>
+                    <param id="1" name="Y">mouse.y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="776732730748973">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="367094290746984" type="player2">
+                    <param id="0" name="Instance variable">blood</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="240849187299428" type="player">
+                    <param id="0" name="Animation">&quot;hurt&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="466882878599771" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="186780070369070" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="946193059089985" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="316740388379039" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="983050741350992" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="874720236006745" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="851431147369490" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="380129751819655" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="305016562349187" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="148325249293638" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="159988439916340" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="507350607472055" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="549635429853501" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="100611392440508" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="823816182087382" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="297989271605512" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="186526280749354" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="942641925985671" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="831274695063627" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="323592673132817" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="403832140298095" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="769753124783352" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="237508187307902" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="690544179698478" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="679895437372353" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="278620669718173" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="742015941093718" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="680077663204052" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="269432784279628" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="723877067533225" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="621607363489966" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="419167812140719" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="972541906844606" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="807466866193128" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="588980079598168" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="454995178308341" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="288530917684815" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="395271322017574" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="156624254670597" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="804593264328103" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="236215862530968" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="553360189403409" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="678448303097669" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="613651683465664" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="228646386092095" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="196166358781897" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="300928691527295" type="player2">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="473524227686147" type="player2">
+                    <param id="0" name="Object">deadplayer</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="909988693435317" type="player2" />
+            </actions>
+        </event-block>
+        <event-block sid="357037488405125">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="333146443483174" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="538548891586819" type="deadplayer" />
+            </actions>
+        </event-block>
+        <event-block sid="243585608152191">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="507990632715627" type="Keyboard">
+                    <param id="0" name="Key">187</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="657941607809828" type="player2">
+                    <param id="0" name="Object">player2</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="335690687279793" type="player2">
+                    <param id="0" name="X">player.x -100</param>
+                    <param id="1" name="Y">player.y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="159282808652422">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="256622125104998" type="Keyboard">
+                    <param id="0" name="Key">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="967315467596316" type="player2">
+                    <param id="0" name="Object">playerprojectile</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="986869733501931">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="952779198921403" type="Keyboard">
+                    <param id="0" name="Key">102</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="313562270097890" type="player2">
+                    <param id="0" name="Object">playerprojectile</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="822154290921318">
+            <conditions>
+                <condition id="6" name="On button pressed" sid="786159244803374" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="275933368517236" type="player2">
+                    <param id="0" name="Object">playerprojectile</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="247658881717376">
+            <conditions>
+                <condition id="6" name="On button pressed" sid="679055248646799" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="245965572888494" type="player2">
+                    <param id="0" name="Object">playerprojectile</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="746588872508146">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="680515638866557" type="FAKEplayer">
+                    <param id="0" name="Instance variable">healthhing</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="723091652177255" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="696240360252446" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="184878720650808" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="401991190697224" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="753249340001004" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="355454238795877" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="991077898441892" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="576730530444706" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="901881205843325" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="321054368323294" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="397579552923441" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="159203519592324" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="108459917578371" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="830977487537485" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="728709889047831" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="883054058789669" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="528998075287159" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="704496213712163" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="786411006810348" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="282792822271911" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="511218504554938" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="192569145874981" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="296820130156100" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="363023886924365" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="651890161328012" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="744760549800548" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="131278360254723" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="153906360723333" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="463621392058123" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="303287098894961" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="665288930305452" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="244322292285531" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="965090066461133" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="537342715863777" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="976884330701498" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="650440151337825" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="150079672063972" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="212175745571565" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="449582056851738" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="277383531026946" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="458815242358870" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="619997447330922" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="598901092503571" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="145701964796820" type="FAKEplayer">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="369625803411118" type="FAKEplayer">
+                    <param id="0" name="Object">deadplayer</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="481848237708000" type="enemyHP" />
+                <action id="-9" name="Destroy" sid="775803931565494" type="FAKEplayer" />
+            </actions>
+        </event-block>
+        <event-block sid="611646627556057">
+            <conditions>
+                <condition id="2" name="Key is down" sid="530952931783064" type="Keyboard">
+                    <param id="0" name="Key">67</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="454886334261229" type="player2">
+                    <param id="0" name="Object">taunteffect</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-3" name="Set position" sid="497201051782620" type="taunteffect">
+                    <param id="0" name="X">player2.X</param>
+                    <param id="1" name="Y">player2.Y</param>
+                </action>
+                <action id="-16" name="Wait" sid="430588788027933" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="394876701966886" type="taunteffect" />
+            </actions>
+        </event-block>
+        <event-block sid="554254551668785">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="621418997122085" type="taunteffect">
+                    <param id="0" name="Object">FAKEplayer</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="301595812575271" type="Keyboard">
+                    <param id="0" name="Key">67</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="373218041031574" type="player2">
+                    <param id="0" name="Object">taunteffect</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-3" name="Set position" sid="559558816124102" type="taunteffect">
+                    <param id="0" name="X">player2.X</param>
+                    <param id="1" name="Y">player2.Y</param>
+                </action>
+                <action id="-16" name="Wait" sid="241955780973883" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="416819008272076" type="taunteffect" />
+                <action id="-11" name="Add to" sid="382571538822068" type="FAKEplayer">
+                    <param id="0" name="Instance variable">healthhing</param>
+                    <param id="1" name="Value">-100</param>
+                </action>
+                <action id="-3" name="Set position" sid="102403821151077" type="player2">
+                    <param id="0" name="X">random(deadplayer.X)</param>
+                    <param id="1" name="Y">self.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="174480166033068">
+            <conditions>
+                <condition id="1" name="On any key pressed" sid="401192329317994" type="Keyboard" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="855622297436622" type="player2">
+                    <param id="0" name="Animation">&quot;walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="413879422615471" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="4" name="Set animation" sid="618754054673371" type="player2">
+                    <param id="0" name="Animation">&quot;idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="180325985210407">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="365543068631818" type="Keyboard">
+                    <param id="0" name="Key">45</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-36" name="Save" sid="245779310078553" type="System">
+                    <param id="0" name="Slot">&quot;ZOOMANIAC_singleplayersave&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="570177596918513">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="252752898654109" type="player2">
+                    <param id="0" name="Object">shadow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="288006669195252" type="System">
+                    <param id="0" name="Layout">levelmenu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
